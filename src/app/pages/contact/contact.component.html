@@ -1,0 +1,73 @@
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+</div>
+
+
+
+<div class="container">
+<form [formGroup]="form" (ngSubmit)="onSubmit(form.value)" >
+   <div class="form-group">
+    <label for="exampleInputEmail1">Your Name</label>
+    <input type="text" class="form-control" name="name" formControlName="name" [(ngModel)]="form.name"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" name="email"  formControlName="email" [(ngModel)]="email" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+
+    <div class="form-group">
+    <label for="exampleInputEmail1">Mobile No.</label>
+    <input type="text" class="form-control" name="mobile" formControlName="mobile"  [(ngModel)]="mobile" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Mobile No.">
+    
+  </div>
+ 
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Description</label>
+    <textarea class="form-control" name="address"  formControlName="address" [(ngModel)]="address"  id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Modules Requirement</label>
+    <textarea class="form-control" name="mods"  formControlName="mods" [(ngModel)]="mods" id="exampleFormControlTextarea2" rows="3"></textarea>
+  </div>
+
+  <input  type="submit" value="submit" class="btn btn-primary" />
+</form>
+</div>
+
+<br>
+
+<div >
+  <div class="container">
+   
+    <table class="table table-responsive-md">
+    
+    <thead style="margin-left:0%;padding:0%">
+    <tr>
+   <th scope="col">Consumer Name</th>
+     <th>Description</th>
+     <th>Modules Requirements Details</th>
+     <th>Action</th>
+    
+    </tr>
+  </thead>
+   <tbody>
+     <tr *ngFor="let contact of contacts |async" (dblclick)="getDelete($event,contact)"_>
+    <td>{{contact.name}}</td> 
+    <td>{{contact.description}}</td>
+    <td>{{contact.modules}}</td>
+     <td><a href="#" (click)="getDelete(id)" >del</a></td>
+    
+    </tr>
+   </tbody>
+  
+  
+
+    </table>
+  </div>
+</div>

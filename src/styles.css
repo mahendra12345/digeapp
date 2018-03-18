@@ -1,1 +1,303 @@
 /* You can add global styles to this file, and also import other style files */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #3F729B;
+    }
+}
+
+
+link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.35s;
+}
+
+.navbar .dropdown-menu a {
+    font-size: 0.9375rem;
+    font-family:'Times New Roman', Times, serif; 
+    font-weight: 300;
+    padding: 10px;
+    color: #000 !important;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .8rem;
+    padding-left: .5rem;
+}
+
+#main{
+    width:100%;
+    height: 100%;
+    margin-left: 0px;
+    padding: 0px; 
+}
+
+/* --------------------------------------------------------	*/
+/*  Footer  */
+/* --------------------------------------------------------	*/
+
+.footer{
+  color:#7e848c;
+  background:#2e343e;
+}
+
+.footer .footer-promo {
+  padding:60px 0px 50px 0px;
+}
+
+.footer .footer-promo h2, .footer .footer-promo h4{
+  text-align:center;
+}
+.button {
+    margin-bottom: 100px;
+    padding-top: 400px;
+    text-align: center;
+}
+
+@media screen and (max-width: 775px) {
+	.button{ padding-top: 110px;}
+}
+.height300{height:500px !important}
+.footer img{
+  width:auto;
+}
+.section-header h2 {
+    display: inline-block;
+    line-height: 40px;
+    padding-bottom: 10px;
+    position: relative;
+	font-size: 45px !important;
+	font-family: "Montserrat","sans-serif";
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.dark-text {
+    color: #404040;
+}
+.footer h6{
+  color:#e5edf2;
+  text-transform:uppercase;
+}
+
+.footer .footer-info{
+  padding:60px 0px 30px 0px;
+}
+
+.footer .list-5{
+  margin-top:-6px;
+}
+
+.footer .list-5 li{
+  border-bottom:1px solid #3f454f;
+  padding-left:15px;
+}
+
+.footer li a{
+  color:#7e848c;
+}
+
+.footer .item-icon{
+  position:relative;
+  padding-left:26px;
+}
+
+.footer .item-icon i{
+  position:absolute;
+  top:4px;
+  left:0px;
+  font-size:16px;
+}
+
+.footer .flickr img{
+  width:30%;
+  margin-right:2%;
+  margin-bottom:2%;
+}
+
+.footer .tweet{
+  position:relative;
+  padding-left:50px;
+}
+
+.footer .tweet i{
+  position:absolute;
+  top:5px;
+  left:0px;
+  color:#fff;
+  background:transparent;
+  border:1px solid #3c3e48;
+  font-size:16px;
+  width:34px;
+  height:34px;
+  line-height:34px;
+  text-align:center;
+  -webkit-border-radius: 1px; 
+     -moz-border-radius: 1px; 
+       -o-border-radius: 1px; 
+          border-radius: 1px; 
+}
+
+.footer .white {
+  color:#fff;
+}
+
+.footer .copyright{
+  background:#FFF; 
+  padding:5px 0px;
+}
+
+.footer .copyright-info{
+  padding-top:2px;
+ /* text-align:right;*/
+}
+
+.footer a, .footer a:visited {
+  color:#8c9aaa;
+}
+
+.footer a:hover{
+  color:#0fa1d5;
+}
+
+.footer .form-control {
+  border-color:#3f454f;
+}
+
+
+@media (max-width: 768px) {
+
+  .footer .logo-footer, .copyright-info {
+    text-align:center;
+    margin-bottom:20px;
+    display:inline-block;
+  }
+
+}
+
+
+/* --------------------------------------------------------	*/
+/*  Client Says  */
+/* --------------------------------------------------------	*/
+
+.client-says .client-text {
+  position:relative;
+  font-style:italic;
+  color:#fff; 
+  background:#2d333d;
+  padding:30px 25px;
+}
+
+.client-says .client-text:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 25px;
+	bottom: -26px;
+	border: 13px solid;
+	border-color: #2d333d transparent transparent transparent;
+}
+
+.client-says .client-name {
+  float:right;
+  padding-top:14px;
+  padding-right:10px;
+}
+
+.client-says .client-name i {
+  font-size:16px;
+  padding-right:10px;  
+}
+
+/* --------------------------------------------------------	*/
+/*  Client Says 2  */
+/* --------------------------------------------------------	*/
+
+.client-says-2 .client-text {
+  position:relative;
+  font-style:italic;
+  color:#0fa1d5; 
+  background:#e6edf2;
+  padding:30px 25px;
+}
+
+.client-says-2 .client-text:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 25px;
+	bottom: -26px;
+	border: 13px solid;
+	border-color: #e6edf2 transparent transparent transparent;
+}
+
+.client-says-2 .client-name {
+  float:left;
+  padding-top:10px;
+  padding-left:55px;
+  font-size:14px;
+}
+
+/* --------------------------------------------------------	*/
+/*  Happy Client Says  */
+/* --------------------------------------------------------	*/
+
+.happy-client-container {
+  padding:100px 0px 80px 0px;
+}
+
+.happy-client-container h4{
+  font-size:26px;
+  font-weight:500;
+  margin-bottom:20px;
+  text-align:center;
+  text-transform:none;
+}
+
+.happy-client-container h5{
+  font-size:15px;
+  font-weight:700;
+  text-align:center;
+  text-transform:none;
+}
+
+.happy-client-container p{
+  font-size:15px;
+  line-height:30px;
+  font-weight:500;
+  color:#fff;
+  text-align:center;
+  text-transform:none;
+}
+
+
+
+.awe-section-83-1{padding-top:0px;padding-left:0px;padding-bottom:0px;padding-right:0px;}
+.awe-section-83-1-0{padding-top:0px;padding-left:0px;padding-bottom:0px;padding-right:0px;}
+
+.awe-section-83-2{background-color:rgb(255,255,255);background-color:#ffffff;}.awe-section-83-2{padding-top:30px;padding-left:0px;padding-bottom:50px;padding-right:0px;}
+.awe-section-83-3{background-color:rgb(21,21,21);background-color:#151515;}.awe-section-83-3{padding-top:10px;padding-left:0px;padding-bottom:20px;padding-right:0px;}
+
+.awe-section-83-4{padding-top:0px;padding-left:0px;padding-bottom:0px;padding-right:0px;}
+
+.awe-section-83-5{background-color:rgb(25,57,116);background-color:#193974;}.awe-section-83-5{padding-top:10px;padding-left:0px;padding-bottom:20px;padding-right:0px;}
+
+.awe-section-83-6{background-color:rgb(255,255,255);background-color:#ffffff;}.awe-section-83-6{padding-top:0px;padding-left:0px;padding-bottom:0px;padding-right:0px;}
+
+.awe-section-83-6-1{padding-top:150px;padding-left:35px;padding-bottom:0px;padding-right:35px;}
+.awe-section-83-7{background-color:rgb(255,255,255);background-color:#ffffff;}.awe-section-83-7{padding-top:0px;padding-left:0px;padding-bottom:0px;padding-right:0px;}
+.awe-section-83-7-0{padding-top:120px;padding-left:35px;padding-bottom:35px;padding-right:35px;}
+
+.awe-section-83-8{background-color:rgb(255,255,255);background-color:#ffffff;}.awe-section-83-8{padding-top:0px;padding-left:0px;padding-bottom:0px;padding-right:0px;}
+
+.awe-section-83-8-1{padding-top:150px;padding-left:35px;padding-bottom:0px;padding-right:35px;}
+.awe-section-83-9{background-color:rgb(28,28,28);background-color:#1c1c1c;}.awe-section-83-9{padding-top:0px;padding-left:50px;padding-bottom:0px;padding-right:0px;}
+.awe-section-83-9-0{padding-top:50px;padding-left:0px;padding-bottom:0px;padding-right:0px;}.awe-section-83-9-0{min-height:302px;}
+.awe-section-83-9-0-0-intro{color:#ffffff;color:rgb(255,255,255);}.awe-section-83-9-0-0-intro h2 span{color:rgb(255,255,255);border-color:rgb(255,255,255)}.awe-section-83-9-0-0-intro p{color:rgb(255,255,255)}
+.awe-section-83-9-1{padding-top:0px;padding-left:30px;padding-bottom:0px;padding-right:30px;}
+
+.awe-section-83-9-1-0-carousel-0-0-testimonial{color:#ffffff;color:rgb(255,255,255);}.awe-section-83-9-1-0-carousel-0-0-testimonial .review p{color:rgb(255,255,255) !important;}.awe-section-83-9-1-0-carousel-0-0-testimonial .review h4{color:rgb(255,255,255)}.awe-section-83-9-1-0-carousel-0-0-testimonial .review .titulation{color:rgb(255,255,255) !important;}
+.awe-section-83-9-1-0-carousel-0-0-testimonial{color:#ffffff;color:rgb(255,255,255);}.awe-section-83-9-1-0-carousel-0-0-testimonial .review p{color:rgb(255,255,255) !important;}.awe-section-83-9-1-0-carousel-0-0-testimonial .review h4{color:rgb(255,255,255)}.awe-section-83-9-1-0-carousel-0-0-testimonial .review .titulation{color:rgb(255,255,255) !important;}
+
+.awe-section-83-9-1-0-carousel-0-0-testimonial{color:#ffffff;color:rgb(255,255,255);}.awe-section-83-9-1-0-carousel-0-0-testimonial .review p{color:rgb(255,255,255) !important;}.awe-section-83-9-1-0-carousel-0-0-testimonial .review h4{color:rgb(255,255,255)}.awe-section-83-9-1-0-carousel-0-0-testimonial .review .titulation{color:rgb(255,255,255) !important;}

@@ -1,0 +1,11 @@
+<p>
+  admin works!
+</p>
+
+<ul *ngFor="let student of students |async">
+ <li><strong>{{ student.name }}</strong></li>
+ <br>
+ {{student.classDivId}}
+ <br>
+ {{student.parentId}}
+</ul>

@@ -1,0 +1,26 @@
+<nav class="navbar sticky-top navbar-light bg-light">
+  <a class="navbar-brand" href="#"><img src="assets/logo.png" alt="logo" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="nav nav-pills">
+      <li >
+        <a   routerLinkActive="active"  class="nav-link" [routerLink]="['/']">Home</a>
+      </li>
+      <li>
+        <a routerLinkActive="active" class="nav-link"  [routerLink]="['/about']">About</a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Modules
+        </a>
+        <app-modules></app-modules>
+      </li>
+       <li>
+        <a routerLinkActive="active" class="nav-link"  [routerLink]="['/contact']">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>
